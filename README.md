@@ -1,6 +1,8 @@
 # portafolio
 
 ##  🗂️ ESTRUCTURA BASE DEL PROYECTO “FUNNEL ÉTICO”
+
+````
 funnel-etico/
 │
 ├── README.md
@@ -35,6 +37,7 @@ funnel-etico/
 └── /config/
     ├── firebase-config.js        ← (para conectar más adelante)
     └── vercel.json               ← si despliegas en Vercel
+````
 
 🧰 ARCHIVOS BASE
 📄 .gitignore
