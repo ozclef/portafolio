@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      width: 90%;
+      max-width: 700px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    canvas {
+      margin-top: 1.5rem;
+      background: #e5e7eb;
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💻 Mi Portafolio</h1>
+    <p>Proyecto en progreso con dedicación,  código y constancia ✨</p>
+  </header>
+
+  <section>
+    <h2>Primera demo</h2>
+    <p>Este espacio puede mostrar tus proyectos o animaciones con canvas 🎨</p>
+    <button onclick="alert('¡Sigue creando! 🚀')">Probar</button>
+    <canvas id="miCanvas"></canvas>
+  </section>
+
+  <script>
+    // Pequeña animación ejemplo
+    const canvas = document.getElementById("miCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#60a5fa";
+    ctx.fillRect(50, 50, 100, 100);
+  </script>
+</body>
+</html>
