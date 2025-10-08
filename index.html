@@ -97,7 +97,8 @@ html,body{height:100%;margin:0;background:linear-gradient(180deg,#071022 0%, #07
         <h2>Notas / Filosofía</h2>
         <p>“Primero la lógica, después el diseño.” Me gusta documentar cada paso: pruebas, fallas técnicas y decisiones. Los repos son capítulos de un trabajo vivo.</p>
       </section>
-      <section>
+      
+      <section class="card">
         <pre>
           🗂️ ESTRUCTURA BASE DEL PROYECTO “FUNNEL ÉTICO”
 funnel-etico/
@@ -214,6 +215,33 @@ Landing → Registro (form) → Guardado SQLite → Email automático (SendGrid)
 - Grabar y publicar 1 clase en formato beta.
         </pre>
       </section>
+
+<section class="card">
+  <pre>
+    mi-monorepo/
+├─ README.md
+├─ .gitignore
+├─ public/               # Archivos estáticos públicos que se despliegan (HTML/CSS/JS compilandos)
+│  └─ index.html
+├─ frontend/             # App React (JSX)
+│  ├─ package.json
+│  └─ src/
+│     └─ App.jsx
+├─ backend/              # Scripts o API (privado o protegido)
+│  ├─ app.py
+│  └─ requirements.txt
+├─ data/                 # JSON de ejemplo, DB sqlite (no en producción si es privado)
+│  └─ samples.json
+├─ scripts/              # Scripts bash para automatizar tareas (no públicos si son secretos)
+│  └─ build_and_export.bsh
+├─ .github/
+│  └─ workflows/
+│     └─ deploy-public.yml
+└─ docs/
+   └─ notas.md
+  </pre>
+</section>
+      
 
       <footer class="card muted">
         <small>Portafolio - GitHub Pages.<br>
