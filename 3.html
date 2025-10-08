@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col justify-center items-center min-h-screen bg-gray-100 text-gray-800">
+  <header class="text-center mb-8">
+    <h1 class="text-3xl font-bold">💻 Mi Portafolio</h1>
+    <p class="text-lg">Código, diseño y constancia 💪</p>
+  </header>
+
+  <section class="bg-white rounded-2xl p-8 shadow-lg w-11/12 max-w-xl flex flex-col items-center">
+    <h2 class="text-2xl font-semibold mb-2">Primera demo</h2>
+    <p class="text-base mb-4 text-center">Este espacio mostrará tus proyectos o canvas 🎨</p>
+    <button
+      class="bg-blue-600 text-white rounded-lg px-4 py-2 hover:bg-blue-700 transition mb-4"
+      onclick="alert('¡Sigue creando! 🚀')">
+      Probar
+    </button>
+    <canvas id="miCanvas" class="w-full h-48 bg-gray-200 rounded-lg"></canvas>
+  </section>
+
+  <script>
+    const canvas = document.getElementById("miCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#60a5fa";
+    ctx.fillRect(40, 40, 120, 120);
+  </script>
+</body>
+</html>
